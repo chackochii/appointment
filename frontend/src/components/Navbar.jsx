@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-[#ADADAD]'>
-      <h1 className="text-primary px-4 py-2 cursor-pointer" onClick={() => navigate('/')}>APPONA</h1>
+      <h1 className="text-primary px-4 py-2 cursor-pointer font-bold" onClick={() => navigate('/')}>APPONA</h1>
       <ul className='md:flex items-start gap-5 font-medium hidden'>
         <NavLink to='/' >
           <li className='py-1'>HOME</li>
@@ -59,7 +59,7 @@ const Navbar = () => {
         {/* ---- Mobile Menu ---- */}
         <div className={`md:hidden ${showMenu ? 'fixed w-full' : 'h-0 w-0'} right-0 top-0 bottom-0 z-20 overflow-hidden bg-white transition-all`}>
           <div className='flex items-center justify-between px-5 py-6'>
-            <h1 className='text-primary'>Appona</h1>
+            <h1 className='text-primary font-bold'>APPONA</h1>
             <img onClick={() => setShowMenu(false)} src={assets.cross_icon} className='w-7' alt="" />
           </div>
           <ul className='flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium'>
